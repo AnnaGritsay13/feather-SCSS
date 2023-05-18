@@ -83,6 +83,7 @@
       position: fixed;
       font-size: 6rem;
       text-align: center;
+      z-index: 1;
     }
     #burger:checked + label + nav {
       display: block;

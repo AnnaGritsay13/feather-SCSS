@@ -515,6 +515,7 @@ h4 {
     position: fixed;
     font-size: 6rem;
     text-align: center;
+    z-index: 1;
   }
   .header #burger:checked + label + nav {
     display: block;
