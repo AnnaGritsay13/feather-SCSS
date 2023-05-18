@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  font-size: 8.8rem;
+  line-height: 10rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 6.8rem;
+    line-height: 8rem;
+  }
+}
+
+h2 {
+  font-size: 6.4rem;
+  line-height: 7.6rem;
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 4.4rem;
+    line-height: 5.2rem;
+  }
+}
+
+h3 {
+  font-size: 4.8rem;
+  line-height: 5.4rem;
+}
+
+h4 {
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.p2 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  text-align: center;
+}
+
+.text-footer {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.text-header {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+@media (max-width: 992px) {
+  html,
+  body {
+    font-size: 8px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
