@@ -739,7 +739,7 @@ h4 {
   position: relative;
 }
 .footer::after {
-  content: url(/src/assets/images/door.png);
+  content: url(../assets/images/door.png);
   position: absolute;
   bottom: 8rem;
   right: 8rem;
