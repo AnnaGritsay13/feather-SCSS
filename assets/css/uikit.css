@@ -486,6 +486,7 @@ h4 {
     position: fixed;
     margin: 7rem 0;
     padding: 4rem;
+    z-index: 1;
   }
   .header__items li {
     font-size: 2rem;
