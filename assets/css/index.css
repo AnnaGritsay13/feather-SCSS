@@ -484,7 +484,7 @@ h4 {
     background: rgba(231, 227, 223, 0.7490196078);
     display: block;
     position: fixed;
-    margin: 8rem 0;
+    margin: 7rem 0;
     padding: 4rem;
   }
   .header__items li {
@@ -519,7 +519,7 @@ h4 {
     display: block;
   }
   .header #burger:checked + [for=burger]::before {
-    content: "🞩";
+    content: "×";
   }
 }
 

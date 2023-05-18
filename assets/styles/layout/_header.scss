@@ -50,7 +50,7 @@
       background: $burgerColor;
       display: block;
       position: fixed;
-      margin: 8rem 0;
+      margin: 7rem 0;
       padding: 4rem;
 
       & li {
@@ -87,7 +87,7 @@
       display: block;
     }
     #burger:checked + [for="burger"]::before {
-      content: "🞩";
+      content: "×";
     }
   }
 }
