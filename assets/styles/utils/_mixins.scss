@@ -1,0 +1,136 @@
+%h1 {
+  font-size: 8.8rem;
+  line-height: 10rem;
+  text-align: center;
+
+  @media ($landscape) {
+    font-size: 6.8rem;
+    line-height: 8rem;
+  }
+}
+%h2 {
+  font-size: 6.4rem;
+  line-height: 7.6rem;
+
+  @media ($landscape) {
+    font-size: 4.4rem;
+    line-height: 5.2rem;
+  }
+}
+%h3 {
+  font-size: 4.8rem;
+  line-height: 5.4rem;
+}
+%h4 {
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+}
+%p {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+%p2 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  text-align: center;
+}
+%text-footer {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+%text-header {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+%box-shadow {
+  -webkit-box-shadow: inset 0px 0px 100px -22px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px 0px 100px -22px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 0px 100px -22px rgba(0, 0, 0, 0.1);
+}
+@mixin btn($bg: $accentColor) {
+  background: $bg;
+  user-select: none;
+
+  &:hover {
+    cursor: pointer;
+    background: darken($color: $bg, $amount: 20%);
+  }
+
+  @media (hover: none) {
+    &:hover {
+      -webkit-tap-highlight-color: transparent;
+      background: $bg;
+    }
+  }
+}
+@mixin room-color($borderColor, $bs) {
+  border: 0.2rem solid $borderColor;
+  box-shadow: 8px 8px 0px $bs;
+}
+@mixin review-color($borderColor, $bs) {
+  border: 2px solid $borderColor;
+  box-shadow: 8px -8px 0px $bs;
+}
+
+@mixin star($bb) {
+  position: relative;
+
+  display: inline-block;
+  width: 0;
+  height: 0;
+
+  margin-left: 0.4em;
+  margin-right: 0.9em;
+  margin-bottom: 1.2em;
+
+  border-right: 0.3em solid transparent;
+  border-bottom: 0.7em solid $bb;
+
+  border-left: 0.3em solid transparent;
+
+  font-size: 12px;
+
+  &:before,
+  &:after {
+    content: "";
+
+    display: block;
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: 0.6em;
+    left: -1em;
+
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid $bb;
+    border-left: 1em solid transparent;
+
+    transform: rotate(-35deg);
+  }
+
+  &:after {
+    transform: rotate(35deg);
+  }
+}
+@mixin a($color: $accentColor) {
+  display: block;
+  text-decoration: none;
+  color: $color;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+    color: $accentColor;
+  }
+
+  @media (hover: none) {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color;
+    }
+  }
+}

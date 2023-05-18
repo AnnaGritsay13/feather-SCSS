@@ -1,0 +1,40 @@
+.furniture {
+  background: $white;
+  padding-top: 40px;
+  padding-bottom: 69px;
+  width: 233px;
+  text-align: center;
+  @include a(#000);
+
+  &:hover {
+    @extend %box-shadow;
+    color: #000;
+  }
+
+  @media (hover: none) {
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  & img {
+    margin-bottom: 31px;
+  }
+
+  & p:first-child {
+    margin-bottom: 10px;
+  }
+
+  & p:last-child {
+    margin: 0 auto;
+    width: 140px;
+
+    label:first-child {
+      color: $accentColor;
+    }
+
+    label:nth-child(2) {
+      color: #4f4f4f;
+    }
+  }
+}

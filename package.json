@@ -1,0 +1,26 @@
+{
+  "name": "wwwtemplate",
+  "version": "1.0.0",
+  "description": "Стартовый проект для сборки и разработки веб-макетов и UI Kit к ним.",
+  "scripts": {
+    "dev": "parcel src/index.html --open",
+    "kit": "parcel src/uikit.html --open",
+    "build:uikit": "parcel build src/uikit.html --dist-dir build/uikit",
+    "build": "parcel build src/index.html --dist-dir build/www"
+  },
+  "author": "Eugene",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "parcel": "^2.8.3",
+    "postcss-modules": "^6.0.0",
+    "sass": "^1.62.1"
+  },
+  "browserslist": [
+    "defaults and supports es6-module",
+    "maintained node versions"
+  ],
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3"
+  }
+}

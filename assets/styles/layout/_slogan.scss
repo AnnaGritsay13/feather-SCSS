@@ -1,0 +1,18 @@
+.slogan {
+  height: 62.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__item {
+    width: 29.2rem;
+    height: 38.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .p2 {
+      padding: 4.1rem 0 3.9rem;
+    }
+  }
+}

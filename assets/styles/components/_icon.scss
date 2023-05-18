@@ -1,0 +1,13 @@
+.icon {
+  margin-bottom: 5.4rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  & a {
+    margin-right: 1.6rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

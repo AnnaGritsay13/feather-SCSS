@@ -1,0 +1,16 @@
+.article {
+    padding: 13.1rem 19.4rem 9.4rem;
+    text-align: center;
+
+    & .p2 {
+        margin-top: 1.6rem;
+    }
+
+    @media ($landscape) {
+        padding: 10rem;
+    }
+
+    @media ($phone) {
+        padding: 5rem;
+    }
+}

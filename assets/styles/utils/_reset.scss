@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 10px;
+  font-family: $mainFont;
+  font-weight: 400;
+
+  @media ($tablet) {
+    font-size: 8px;
+  }
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: $mainFont;
+  font-weight: 400;
+}
+h1 {
+  @extend %h1;
+}
+h2 {
+  @extend %h2;
+}
+h3 {
+  @extend %h3;
+}
+h4 {
+  @extend %h4;
+}
+p {
+  @extend %p;
+}
+.p2 {
+  @extend %p2;
+}
+.text-header {
+  @extend %text-header;
+}
+.text-footer {
+  @extend %text-footer;
+}

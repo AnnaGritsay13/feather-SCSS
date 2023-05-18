@@ -1,0 +1,37 @@
+.room {
+  text-align: center;
+  width: 248px;
+  height: 257px;
+  border-radius: 4px;
+  background: $white;
+  margin-right: 31px;
+  margin-bottom: 31px;
+  @include a(#000);
+
+  &:hover,
+  &:active {
+    color: $accentColor;
+  }
+
+  & img {
+    height: 193px;
+  }
+
+  & p {
+    padding-top: 12px;
+    font-size: 17px;
+  }
+}
+
+.room_color_violet {
+  @include room-color($accentColor, #cbc6f4);
+}
+.room_color_yellow {
+  @include room-color(#225dca, #e7cb43);
+}
+.room_color_green {
+  @include room-color(#242947, #a2d4c5);
+}
+.room_color_red {
+  @include room-color(#de4333, #af4920);
+}

@@ -1,0 +1,35 @@
+.info-blog {
+    background: $noteColor;
+    padding: 3.9rem 12.8rem 7.2rem;
+
+    & h1 {
+        margin: 0 4.3rem 4.1rem 6.8rem;
+    }
+
+    &__logo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & img {
+            margin-bottom: 3rem;
+        }
+
+        & img + img {
+            margin-left: 9.4rem;
+        }
+    }
+
+    @media ($landscape) {
+        padding: 3rem;
+
+        & h1 {
+            margin: 0;
+            margin-bottom: 3rem;
+        }
+
+        & img + img{
+            margin-left: 3rem;
+        }
+    }
+}

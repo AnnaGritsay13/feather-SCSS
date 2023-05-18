@@ -1,0 +1,75 @@
+.footer {
+  display: flex;
+  padding: 8.9rem 20.6rem 20rem 8rem;
+  border-top: 2px solid #cdd454;
+  position: relative;
+
+  &::after {
+    content: url(/src/assets/images/door.png);
+    position: absolute;
+    bottom: 8rem;
+    right: 8rem;
+  }
+
+  & > div:not(:last-child) {
+    margin-right: 8rem;
+  }
+
+  #footer__furniture,
+  #footer__about,
+  #footer__help {
+    display: none;
+  }
+  [for="footer__furniture"],
+  [for="footer__about"],
+  [for="footer__help"],
+  &__social p,
+  &__social a {
+    @extend %text-footer;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+  }
+  & nav {
+    margin-top: 2.5rem;
+  }
+  & a {
+    margin-bottom: 1.2rem;
+    @include a(#000);
+  }
+
+  @media ($tablet) {
+    padding-right: 5rem;
+    display: block;
+
+    & div {
+      margin-bottom: 2.5rem;
+    }
+    & nav {
+      display: none;
+    }
+    [for="footer__furniture"]::after,
+    [for="footer__about"]::after,
+    [for="footer__help"]::after {
+      content: " \002B";
+      color: $accentColor;
+      font-size: 18px;
+    }
+
+    #footer__furniture:checked + label + nav,
+    #footer__about:checked + label + nav,
+    #footer__help:checked + label + nav {
+      display: block;
+      & a {
+        color: $accentColor;
+      }
+    }
+
+    #footer__furniture:checked + [for="footer__furniture"]::after,
+    #footer__about:checked + [for="footer__about"]::after,
+    #footer__help:checked + [for="footer__help"]::after {
+        content: "×";
+        padding-left: 6px;
+    }
+  }
+}

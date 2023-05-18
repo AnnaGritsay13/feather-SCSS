@@ -1,0 +1,11 @@
+.shop {
+    text-align: center;
+    padding-top: 4.6rem;
+
+    &__rooms{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 43px 71px 40px 92px;
+    }
+}

@@ -1,0 +1,7 @@
+.cards {
+    padding-bottom: 19.1rem;
+
+    @media ($landscape) {
+        padding-bottom: 10rem;
+    }
+}

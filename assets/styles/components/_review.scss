@@ -1,0 +1,38 @@
+.review {
+  min-width: 39.6rem;
+  height: 25.4rem;
+  background: $white;
+  padding: 3.4rem;
+  margin-right: 3.2rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  & p:nth-child(2) {
+    margin-top: 1.6rem;
+    margin-bottom: 2.8rem;
+  }
+}
+
+.review_color_violet {
+  @include review-color($accentColor, #cbc6f4);
+
+  & .star {
+    @include star(#cbc6f4);
+  }
+}
+.review_color_yellow {
+  @include review-color(#225dca, #e7cb43);
+
+  & .star {
+    @include star(#e7cb43);
+  }
+}
+.review_color_green {
+  @include review-color(#242947, #a2d4c5);
+
+  & .star {
+    @include star(#a2d4c5);
+  }
+}

@@ -1,0 +1,13 @@
+.btn {
+  @include btn();
+  @extend %p;
+
+  color: inherit;
+  border-radius: 8.8rem;
+  padding: 1.6rem 4rem;
+  border: none;
+  text-decoration: none;
+}
+.btn-white {
+  @include btn($white);
+}

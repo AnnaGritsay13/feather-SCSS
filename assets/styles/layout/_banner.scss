@@ -1,0 +1,40 @@
+.banner {
+  display: flex;
+  align-items: center;
+  height: 60rem;
+
+  & img {
+    max-width: 50%;
+  }
+
+  &__info {
+    padding: 0 3rem 0 9.5rem;
+
+    & p {
+      margin: 1.8rem 0 4.6rem;
+    }
+  }
+
+  @media ($tablet) {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+
+  @media ($landscape) {
+    flex-direction: column;
+
+    &__info {
+      padding: 0 0 3rem 0;
+      text-align: center;
+
+      & p {
+        width: 80%;
+        margin: 3rem auto;
+      }
+    }
+
+    & img {
+      max-width: 80%;
+    }
+  }
+}

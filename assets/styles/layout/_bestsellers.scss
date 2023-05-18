@@ -1,0 +1,28 @@
+.bestsellers {
+  text-align: center;
+  padding: 11.2rem 0 14.4rem;
+
+  & > a{
+  @include a();
+  @extend %p;
+  }
+
+
+
+
+  &__furnitures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 55px 0;
+
+    & .furniture {
+      margin-right: 4px;
+      margin-top: 4px;
+    }
+  }
+
+  @media ($landscape) {
+    padding: 5rem;
+  }
+}
